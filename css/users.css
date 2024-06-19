@@ -1,0 +1,53 @@
+
+.navbar{
+
+    margin-top: -8px;
+    margin-left: -7px;
+    background-color: white;
+
+}
+.para{
+    padding: 20px;
+    color: aliceblue;
+}
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+
+.box{
+  /* background-color: lightslategray; */
+    margin: 40px;
+    padding-left: 660px;
+}
+th{
+    background-color: skyblue;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 95px;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+
+
+
+
+
+

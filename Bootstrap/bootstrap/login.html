@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="../js/login.js"></script>
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
+  <body>
+    <!-- Email input -->
+    <section class="vh-100" style="background-color: #eee">
+      <div class="bg-image" style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/Others/images/76.webp'); width:100% ;height: 100vh;">
+
+      <div class="container h-100">
+
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-lg-12 col-xl-11">
+            <div class="card text-black" style="border-radius: 25px">
+              <div class="card-body p-md-5">
+                <div class="row justify-content-center">
+                  <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+                    <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">
+                      Login
+                    </p>
+
+                    <form class="mx-1 mx-md-4" id="signup-form">
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                          <!-- <div id="password-mistake" style="color: red;"></div> -->
+                          <label class="form-label" for="form3Example1c"
+                            >User Name</label
+                          >
+
+                          <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            class="form-control"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                          <label class="form-label" for="password"
+                            >Password</label
+                          >
+                          <div id="password-error" style="color: red"></div>
+
+                          <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            class="form-control"
+                          />
+                        </div>
+                      </div>
+
+                      <div
+                        class="d-flex justify-content-center mx-4 mb-3 mb-lg-4"
+                      >
+                        <!-- <input type="submit" value="submit"/> -->
+                        <a
+                          href="users.html"
+                          class="btn btn-primary btn-lg"
+                          id="save"
+                          >SAVE</a
+                        >
+
+                        <!-- <a href="users.html"><button onclick="validateForm()" type="button" class="btn btn-primary btn-lg">Login</button></a> -->
+                        <a href="signup.html"
+                          ><button type="button" class="btn btn-primary btn-lg">
+                            SignUp
+                          </button></a
+                        >
+                      </div>
+                    </form>
+                  </div>
+                  <!-- <div
+                    class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2"
+                  >
+                    <img
+                      src="https://img.freepik.com/premium-vector/healthcare-medical-team-shape-heart-hospital-staff-health-professionals-group-uniform-your-concepts-vector-illustration_81894-1993.jpg"
+                      class="img-fluid"
+                      alt="Sample image"
+                    /> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <script>
+  function validateForm(){
+    
+    var username=document.getElementById("name").value;
+    var password=document.getElementById("password").value;
+    var passwordError = document.getElementById("password-error");
+    var passwordMistake = document.getElementById("password-mistake"); -->
+
+    <!-- // var passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+  
+  //  if (password.length < 8) {
+  //   alert("Password must be at least 8 characters long.");
+  //   event.preventDefault();
+  //   return false; // prevent form submission
+  // } -->
+    <!-- //   if(username===""&&password===""){
+//     event.preventDefault();
+//     passwordMistake.textContent = "Please fill the details";
+//     passwordError.textContent = "Please fill the details";
+//   }
+//   if (username === "" ) {
+//     event.preventDefault();
+//     passwordMistake.textContent = "Please fill the details";
+//     return false; // prevent form submission
+
+// }
+// else {
+//     passwordMistake.textContent = ""; // clear error message
+    
+//   }
+// if (password === "" ) {
+//     event.preventDefault();
+//     passwordError.textContent = "Please fill the details";
+//     return false; // prevent form submission
+
+// }
+// else {
+    
+//     passwordError.textContent="";
+//   }
+
+//   password.addEventListener("keyup", function() {
+  
+//   // check if password includes uppercase letter
+//   if (/[A-Z]/.test(password.value)) {
+   
+//     passwordError.textContent = "";
+  
+//   } else {
+   
+//     passwordError.textContent = "Please include at least one uppercase letter";
+//   }
+// });
+  // check if password includes lowercase letter
+//   if (/[a-z]/.test(password)) {
+//     lowercaseError.style.display = "none";
+//   } else {
+//     lowercaseError.style.display = "block";
+//   } -->
+
+    <!--  
+// switch(true) {
+//     case username === "":
+//       // alert("Please enter your name");
+//           passwordMistake.textContent = "Please fill the details";
+//           event.preventDefault();
+
+//     case password === "":
+//       // alert("Please enter your email");
+//           passwordError.textContent = "Please fill the details";
+//           event.preventDefault();
+          
+  //   case /[A-Z]/.test(password):
+  //   passwordError.textContent = "";
+    
+  // default:
+  //   event.preventDefault();
+  //   passwordError.textContent = "Please include at least one uppercase letter";
+  //   return false; // prevent form submission
+    // case !email.includes("@"):
+    //   alert("Please enter a valid email address");
+    // default:
+    //   alert("Form submitted successfully");
+  // }
+
+
+
+
+// if (/[A-Z]/.test(password))
+//  {
+//   passwordError.textContent="";
+//  } 
+//   else {
+//       event.preventDefault();
+//     passwordError.textContent = "Please include at least one uppercase letter";
+//     return false; // prevent form submission
+//   }
+   
+//     if(/[a-z]/.test(password)){
+//       passwordError.textContent=""
+//     }
+//     else{
+//       event.preventDefault();
+//     passwordError.textContent = "Please include at least one lowercase letter";
+//     return false; // prevent form submission
+//     }
+//     if(/[0-9]/.test(password)){
+//       passwordError.textContent=""
+//     }
+//     else{
+//       event.preventDefault();
+//     passwordError.textContent = "Please include at least one Number";
+//     return false; // prevent form submission
+//     }
+    
+//     if(/[$@$!%*#?&]/.test(password)){
+//       passwordError.textContent="";
+//     }
+//     else{
+//       event.preventDefault();
+//     passwordError.textContent = "Please include at least one Special Symbol";
+//     return false; // prevent form submission
+//     }
+//     if(password.length>7){
+//       passwordError.textContent="";
+     
+//     }
+//     else{
+//       event.preventDefault();
+//     passwordError.textContent = "Minimum 8 numbers required";
+//     return false; // prevent form submission
+//     }
+ -->
+
+    <!-- 
+//  if (!passwordRegex.test(password)) {
+//   event.preventDefault();
+//     passwordError.textContent = "Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character.";
+   
+
+//     return false; // prevent form submission
+     
+//   } else {
+//     passwordError.textContent = ""; // clear error message
+//   }
+  
+//   } -->
+    <!-- // </script> -->
+
+    <script>
+      const passwordInput = document.getElementById("password");
+      var passwordError = document.getElementById("password-error");
+      const lowercaseRegex = /^(?=.*[a-z])/;
+      const uppercaseRegex = /^(?=.*[A-Z])/;
+      const digitRegex = /^(?=.*[0-9])/;
+
+      passwordInput.addEventListener("input", function () {
+        const password = passwordInput.value;
+
+        // if (password.length < 8) {
+        //       passwordError.textContent = "Password must be at least 8 characters long";
+
+        //   // alert('Password must be at least 8 characters long');
+        // }
+
+        if (!lowercaseRegex.test(password)) {
+          passwordError.textContent =
+            "Password must contain at least one lowercase letter";
+          event.preventDefault();
+          return false;
+          // alert('Password must contain at least one lowercase letter');
+        }
+
+        if (!uppercaseRegex.test(password)) {
+          passwordError.textContent =
+            "Password must contain at least one uppercase letter";
+          event.preventDefault();
+          return false;
+          // alert('Password must contain at least one uppercase letter');
+        }
+
+        if (!digitRegex.test(password)) {
+          // alert('Password must contain at least one digit');
+          passwordError.textContent =
+            "Password must contain at least one digit";
+          event.preventDefault();
+          return false;
+        } else {
+          passwordError.textContent = ""; // clear error message
+        }
+      });
+    </script>
+  </body>
+</html>
